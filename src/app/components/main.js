@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import style from "../styles/main.module.css";
+import Spinner from "./Spinner";
 
 export default function Main() {
 
@@ -15,6 +16,10 @@ useEffect( () => {
  getProduct();
   }, []);
 
+
+if (listProduct [0] == null) {
+  return <Spinner/>
+}
 
 const orderAz = () => {
   const listAux = [...listProduct].sort((a, b) => 

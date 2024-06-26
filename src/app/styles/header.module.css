@@ -1,20 +1,23 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 2rem;
-    background-color: #663399;
+    background-color: #ffffff;
   }
   
   .logo {
-    flex: 1;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 60%;
   }
   
-  .navbar {
-    flex: 2;
-    display: flex;
-    justify-content: center;
+  .p {
+    margin-top: 10px; /* Adjust spacing between image and text */
   }
+  
+ 
   
   .navList {
     display: flex;
@@ -32,12 +35,17 @@
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    width: 40%;
   }
   
   .actions button {
     padding: 0.9rem 1rem;
     border: none;
-    background-color: #9932CC;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     font-size: 1rem;
+  }
+
+  .p{
+    color: rgb(200, 198, 198);
   }

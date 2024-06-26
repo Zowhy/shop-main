@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "./spinner.module.css";
+import styles from "../styles/spinner.module.css";
 
 export default function Spinner() {
     return (
         <div className={styles.spinnerContainer}>
-            <Image width={100} height={100} alt="Loading" src={"/6-dots-rotate.svg"} className={styles.image} />
+            <Image width={100} height={100} alt="Loading" src={"/loading.svg"} className={styles.image} />
         </div>
     );
 }
